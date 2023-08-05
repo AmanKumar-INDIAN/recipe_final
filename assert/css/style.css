@@ -1,0 +1,485 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 200vh;
+scroll-behavior: smooth;
+    background-color: rgb(0, 0, 0)
+    
+}
+body::-webkit-scrollbar{ 
+    width: 5px;
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+li,
+a,
+button{display: block;
+
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.header-main{
+    position: fixed;
+    left: 0;
+    top: 0;
+margin: 0;
+    width: 100%;
+    border-block-end: 2px solid white;
+    box-shadow: 0px 0px 10px white;
+    overflow: hidden;
+    z-index: 6;
+}
+.background-img-hader{
+    position:absolute;
+    height: 100px;
+    width: 100%;
+   filter: blur(1px);
+}
+.header-img{
+    position: relative;
+    width: 100%;
+    height: 100px;
+
+}
+.header{
+    position: relative;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 10px;
+}
+
+.logo{
+    position: relative;
+    margin: 10px 15px;
+}
+.logo_title{
+    position: relative;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+.navbar{
+    display: none;
+ 
+}
+.cart{
+    position: relative;
+    margin: 1px 30px;
+}
+.cart button{
+outline: none;
+background-color: transparent;
+color: white;
+border: none;
+}
+
+
+
+.mobile_nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    border-top: 2px solid white;
+    background-image: linear-gradient(to top, #000000, #000000, #000000, #000000, rgb(0, 0, 0));
+   
+    z-index: 4;
+}
+
+.mov-nav-ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 20px 0px;
+   place-items: center;
+   align-items: center;
+  
+}
+.mov-nav-ul li{
+    color: white;
+}
+.mov-nav-ul li a{
+    font-size: 1.7rem;
+}
+
+article{ 
+    overflow: hidden;
+    margin: 0px 7px;
+    
+}
+
+.hero{
+    margin-top: 100px;
+    position: static;
+    height: 400px;
+   
+}
+
+.hero-banner{
+  
+    width: 100%;
+    height: 400px;
+}
+.banner-img{
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    filter:brightness(60%);
+   
+}
+.title-small{
+    font-size: 1.1rem;
+}
+.title-large{
+    font-size: 1.7rem;
+}
+
+
+.title-hero-banner , .title-hero-para{
+    margin: 20px 1px;
+    margin-inline-start:10px ;
+    padding: 10px 5px;
+    position: relative;
+   bottom: 300px;
+    color: rgb(255, 255, 255);
+    
+}
+.input-serch{
+    height: 60px;
+    
+    display: flex;
+    position:relative;
+    width: 100%;
+    bottom: 290px;
+}
+
+.input-serch-aria-lable{
+    width: 80%;
+}
+
+.input-serch-aria{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    font-size: 16px;
+    color: white;
+    padding: 1px;
+    margin:0px 2px;
+
+border-radius: 10px;
+}
+
+.serch-btn{
+    position: relative;
+    
+    width: 20%;
+    height: 60px;
+    width: 60px;
+    background-image: linear-gradient(to right top, #ffd200, #ffba00, #ffa200, #ff8900, #ff6e00);
+    border: 5px solid orange;
+    border-radius: 0px 40px 0px 0px ;
+}
+
+
+.tab-buttons{
+    height: 60px;
+    width: 100%;
+    margin-top: 10px;
+    background-color:rgb(0, 0, 0) ;
+}
+.tab-botton-list{
+    width: 100%;
+    display: flex;
+ 
+   
+    gap: 10px;
+    align-items: center;
+    
+    
+}
+.tab-button-name{ 
+    border: none;
+    margin: 0px 1px;
+    background-image: linear-gradient(to right top, #ff923e, #6a6291, #5a4caa, #d35425, #f9ee73);
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+}
+
+.tab-button-name:hover{
+    border-block-start:3px solid white;
+    border-block-end: 2px solid rgb(205, 0, 0);
+    background: black;
+    color: rgb(255, 254, 254);
+    box-shadow: 0px 4px 5px white;
+  text-shadow: 1px 1px 10px rgb(240, 0, 0);
+}
+.active{
+ 
+    border-block-end: 2px solid rgb(205, 0, 0);
+    background: rgb(42, 42, 42);
+    color: rgb(255, 254, 254);
+   
+ 
+}
+
+.tab{
+    margin: 10px;
+}
+
+.grid-list{
+    background-image: linear-gradient(to right top, #000000, #1a1917, #483406, #140e02, #000000);
+    margin: 0px;
+}
+.section-grid-list{
+    background-image: linear-gradient(to right top, #000000, #1a1917, #483406, #140e02, #000000);
+    margin: 0px;
+    width: 100%;
+}
+
+.card-title{
+    position: relative;
+    top: 10px;
+    text-align: center;
+   margin: 10px 2px;
+   color: white;
+
+}
+
+
+
+.card-body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto,1fr);
+  gap: 9px;
+    overflow: hidden;
+
+}
+
+.card{
+   border-radius: 5px;
+   background-color: #fffbfb;
+   width: 90%;
+   margin: 10px;
+   box-shadow: 0px 0px 10px white;
+   transition:300ms ease;
+
+
+}
+
+.card:hover{
+    transform: scale(1.04,1.04);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    background-image: linear-gradient(to right top, #a14d00, #a57d32, #aca66c, #bfcaab, #e6e9e6);
+}
+
+.image-holder{
+    width: 100%;
+    
+}
+
+.image-holder:hover{
+    transform: scale(1.04,1.04);
+}
+.imageis{
+    width: 100%;
+    border-radius: 3px ;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.card-para-tit{
+    border-top: 1px solid rgb(253, 143, 0);
+    margin: 5px;
+  font-size: 18px;
+  background-color: #ffffff;
+  border-bottom: 2px solid black;
+   
+}
+.time-simble{
+    margin: 4px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 128, 0);
+  text-shadow: 1px black;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  background-image: linear-gradient(to right top, #000000, #1a1917, #000000, #140e02, #ff7700);
+  position: relative;
+  font-weight: 800;
+  border-radius: 30px ;
+}
+.time-place{
+    position: relative;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-shadow:0px 1px  5px rgb(233, 0, 0);
+    
+}
+
+.simblee{
+    position:absolute;
+    bottom: 206px;
+    right: 0px;
+    color: rgb(234, 125, 0);
+    clip-path: initial;
+    background-color: black;
+    box-shadow: 0px 0px 10px;
+    border-radius: 1px 1px 8px 8px;
+    cursor: pointer;
+}
+
+.simblee:hover{
+    color: white;
+}
+
+.simblee span{
+    font-size: 40px;
+    text-shadow: 10px black;
+}
+.inwork{
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-menu{
+    margin-top: 10px;
+    width: 100%;
+    height: 170px;
+
+
+    
+}
+
+.trand-title{
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 2px; 
+    margin: 5px;
+}
+
+.slider-list{
+    display: flex;
+    gap: 25px;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: mandatory;
+    cursor: pointer;
+
+}
+.slider-list::-webkit-scrollbar{
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+}
+.slider-card{
+    height: 170px;
+ 
+position: relative;
+border-radius: 10px;
+}
+.silider-image{
+
+    height:130px ;
+    position: relative;
+
+}
+.image-of-silder{
+    opacity: 0.7;
+    
+    border-radius: 10px;
+    width: 100px;
+    height: 110px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 5px whitesmoke;
+
+}
+.heart-icone{
+    position: relative;
+    color: white;
+    bottom: 99px;
+    right: -77px;
+    font-size: 20px;
+}
+.title-extra-small{
+   font-size: 11px;
+   font-weight: 800;
+}
+.title-small{
+    font-size: 19px;
+    font-weight: 900;
+    margin-inline-start: 2px;
+}
+.title-smallest{
+    font-size: 10px;
+    margin-inline: 10px;
+}
+.slider-text-aria{
+    position: relative;
+    color: white;
+    bottom: 70px;
+    filter: brightness(10);
+}
+
+.restro-name{
+    color: white;
+margin-top: 8px;
+    position: relative;
+    bottom: 70px;
+
+}
+
+.restro-name-place{
+    font-size: 13px;
+    letter-spacing: 0.79px;
+}
+
+.stare-icone{
+   font-size: 15px;
+   background-color: green;
+   border-radius: 50%;
+   height: 15px;
+   width: 15px;
+}
+.minets-in-diliver{
+    display: flex;
+}
+
+.time-taken{
+    font-size: 11px;
+    margin: 2px;
+}
+.food-type{
+    font-size: 10px;
+    word-spacing: 2px;
+}
