@@ -1,0 +1,6 @@
+serch api for app
+1.setup api 
+2. get by serch by name 
+3.serch list by catogry
+4.contatct us page
+5.save recipe page eith a delet module is recipe is save go in top rated by you
